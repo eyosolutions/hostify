@@ -11,7 +11,7 @@ Modifier naming e.g card--primary or card-container--primary */
   --color-body: #918ca4;
   --color-border: #ccc;
   --border-radius: 30px;
-  --white-text: #fff;
+  --color-text: #fff;
 }
 
 *,
@@ -118,16 +118,17 @@ a {
 /* BEM Modifier defined */
 .badge--primary {
   background: var(--color-primary);
-  color: var(--white-text);
+  color: var(--color-text);
 }
 
 .badge--secondary {
   background: var(--color-secondary);
-  color: var(--white-text);
+  color: var(--color-text);
 }
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -204,7 +205,7 @@ a {
 
 .btn--primary {
   background: var(--color-primary);
-  color: var(--white-text);
+  color: var(--color-text);
 }
 
 .btn--primary:hover {
@@ -213,7 +214,7 @@ a {
 
 .btn--secondary {
   background: var(--color-secondary);
-  color: var(--white-text);
+  color: var(--color-text);
 }
 
 .btn--secondary:hover {
@@ -222,7 +223,7 @@ a {
 
 .btn--accent {
   background: var(--color-accent);
-  color: var(--white-text);
+  color: var(--color-text);
 }
 
 .btn--accent:hover {
@@ -237,7 +238,7 @@ a {
 
 .btn--outline:hover {
   background: var(--color-headings);
-  color: var(--white-text);
+  color: var(--color-text);
 }
 
 .btn--block {
@@ -301,10 +302,62 @@ a {
 
 .card--primary .card__header {
   background: var(--color-primary);
-  color: var(--white-text);
+  color: var(--color-text);
 }
 
 .card--secondary .card__header {
   background: var(--color-secondary);
-  color: var(--white-text);
+  color: var(--color-text);
+}
+
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+/* PLANS */
+.plan__name {
+  color: var(--color-text);
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
