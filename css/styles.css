@@ -9,6 +9,9 @@ Modifier naming e.g card--primary or card-container--primary */
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
+  --white-text: #fff;
 }
 
 *,
@@ -115,12 +118,12 @@ a {
 /* BEM Modifier defined */
 .badge--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--white-text);
 }
 
 .badge--secondary {
   background: var(--color-secondary);
-  color: #fff;
+  color: var(--white-text);
 }
 
 .badge--small {
@@ -201,7 +204,7 @@ a {
 
 .btn--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--white-text);
 }
 
 .btn--primary:hover {
@@ -210,7 +213,7 @@ a {
 
 .btn--secondary {
   background: var(--color-secondary);
-  color: #fff;
+  color: var(--white-text);
 }
 
 .btn--secondary:hover {
@@ -219,7 +222,7 @@ a {
 
 .btn--accent {
   background: var(--color-accent);
-  color: #fff;
+  color: var(--white-text);
 }
 
 .btn--accent:hover {
@@ -234,7 +237,7 @@ a {
 
 .btn--outline:hover {
   background: var(--color-headings);
-  color: #fff;
+  color: var(--white-text);
 }
 
 .btn--block {
@@ -248,10 +251,10 @@ a {
   }
 }
 
-/* INPUTS */
+/* INPUTS And INPUT-GROUPS */
 .input {
-  border-radius: 30px;
-  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
   color: var(--color-headings);
   font-size: 2rem;
   outline: 0;
@@ -260,6 +263,22 @@ a {
 
 ::placeholder {
   color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
