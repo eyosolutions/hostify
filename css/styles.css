@@ -844,6 +844,7 @@ a {
 /* FOOTER */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -912,4 +913,10 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* CALLOUT-SIGNUP */
+.callout-signup {
+  position: relative;
+  bottom: -5rem;
 }
