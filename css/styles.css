@@ -2,6 +2,7 @@
 /* Block naming e.g card or card-container
 Element naming e.g card__item or card-container__item
 Modifier naming e.g card--primary or card-container--primary */
+@import "./normalize.css";
 
 :root {
   --color-primary: #2584ff;
