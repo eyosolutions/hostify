@@ -171,7 +171,7 @@ a {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 1024px) {
   .list--tick .list__item {
     padding-left: 0;
   }
@@ -637,7 +637,6 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  /* border: 1px solid red; */
 }
 
 .block__header {
